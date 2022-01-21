@@ -6,43 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calender</title>
     <style>
-        /* *{
+        *{
             border: 1px solid red;
-        } */
+        }
         .calender {
-            display: flex;
+            display: grid;
             flex-direction: row;
         }
         
         .month{
             display: grid;
             grid-gap: 0px;
-            border: 1px solid red;
-            width: 713px;
+            /* border: 1px solid red; */
+            width: 726px;
         }
+
         .weeks {
             display: flex;
             grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
-            grid-gap: 0px;
+            grid-gap: 2px;
+            margin: 0px;
+            justify-content: center;
             /* border: 1px solid blue; */
         }
         .week-day-names {
             display: flex;
-            grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
-            width: 100px;
+            /* grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr; */
             height: 50px;
             grid-gap: 54px;
-            border: 1px solid green;
-            /* justify-content: center; */
+            justify-content: center;
+            /* border: 1px solid green; */
             align-items: center;
             /* border: 1px solid blue; */
         }
         .day {
-            border: 1px solid green;
+            /* border: 1px solid green; */
             width: 100px;
             height: 75px;
         }
-
+        .days {
+            display: flex;
+            align-items: center;
+        }
 
     </style>
 
@@ -59,6 +64,7 @@
                 <div class="days">Friday</div>
                 <div class="days">Saturday</div>
             </div>
+            
             <div class="weeks">
                 <div class="day">1</div>
                 <div class="day">2</div>
