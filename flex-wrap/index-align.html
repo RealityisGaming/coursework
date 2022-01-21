@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Align Self</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 0;
+            height: calc(100vh - 20px);
+            width: calc(100vw - 20px);
+            border: 10px solid red;
+            /* display: flex; */
+        }
+        
+        img {
+            margin: 10px;
+            height: 70px;
+            width: 120px;
+        }
+        
+        .img_blocks {
+            display: flex;
+            height: calc(100vh - 20px);
+            width: calc(100vw - 20px);
+        }
+
+        .img_blocks > .img5 {
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img_blocks">
+            <img src="../images/flex-wrap/1.jpg" alt="" class="img1">
+            <img src="../images/flex-wrap/2.jpg" alt="" class="img2">
+            <img src="../images/flex-wrap/3.jpg" alt="" class="img3">
+            <img src="../images/flex-wrap/4.jpg" alt="" class="img4">
+            <img src="../images/flex-wrap/5.jpg" alt="" class="img5">
+            <img src="../images/flex-wrap/6.jpg" alt="" class="img6">
+            <img src="../images/flex-wrap/7.jpg" alt="" class="img7">
+            <img src="../images/flex-wrap/8.jpg" alt="" class="img8">
+        </div>
+    </div>
+</body>
+
+</html>
