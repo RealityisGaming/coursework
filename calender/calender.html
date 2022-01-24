@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calender</title>
-    <style>
+
+    <link rel="stylesheet" href="scss/style.css">
+
+    <!-- <style>
         /* *{
             border: 1px solid red;
         } */
@@ -29,7 +32,7 @@
         .monthname {
             font-size: 3em;
             text-align: center;
-            color: cyan;
+            color: $font-color;
         }
 
         .weeks {
@@ -49,19 +52,19 @@
             height: 75px;
             margin: 0px;
             padding: 0px;
-            color: cyan;
+            color: $font-color;
             border: 1px solid red;
         }
         .days {
             display: flex;
             justify-content: center;
-            color: cyan;
+            color: $font-color;
         }
         .overflow {
-            background-color: lightgray;
+            background-color: hotpink;
         }
 
-    </style>
+    </style> -->
 
 </head>
 <body>
@@ -77,6 +80,7 @@
                 <div class="days">Friday</div>
                 <div class="days">Saturday</div>
             </div>
+
             <div class="weeks">
                 <div class="day overflow">29</div>
                 <div class="day overflow">30</div>
@@ -99,7 +103,7 @@
                 <div class="day">15</div>
                 <div class="day">16</div>
                 <div class="day">17</div>
-                <div class="day">18</div>
+                <div class="day teens">18</div>
                 <div class="day">19</div>
                 <div class="day">20</div>
                 <div class="day">21</div>

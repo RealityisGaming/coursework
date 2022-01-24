@@ -1,0 +1,57 @@
+@use '/scss/modules';
+$font-color: blue;
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+// * {
+//     border: 1px solid red;
+// } 
+.calender {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
+
+    .month {
+        display: grid;
+        grid-gap: 0px;
+        width: 726px;
+        background-image: url(../images/2059252-1152x864-[DesktopNexus.com].jpg);
+        
+        .monthname {
+            font-size: 3em;
+            text-align: center;
+            color: $font-color;
+        }
+        .weeks {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 2px;
+            margin: 0px;
+        }
+        .week-day-names {
+            @include modules.flexy;
+            @include modules.cheech-chong(50px);
+            grid-gap: 54px;
+            align-items: center;
+        }
+        .day {
+            width: 100px;
+            @include modules.cheech-chong(75px);
+            margin: 0px;
+            padding: 0px;
+            color: modules.$color;
+            border: 1px solid red;
+            background-color: red;
+        }
+        .days {
+            @include modules.flexy;
+            justify-content: center;
+            color: modules.$font-color;
+        }
+        .overflow {
+            background-color: hotpink;
+        }
+    }
+}

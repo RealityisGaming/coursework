@@ -1,0 +1,15 @@
+// $color: red;
+
+@mixin flexy {
+    display: flex;
+}
+
+@mixin cheech-chong($height){
+    height: $height;
+}
+
+@mixin spinach($color:false) {
+    @if $color !=false {
+        color: $color;
+    }
+}
